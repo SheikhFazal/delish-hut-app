@@ -1,40 +1,48 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import PizzaOne from '../../assets/images/contact-us/image-one-parallax.webp'
-
+import PizzaOne from "../../assets/images/contact-us/image-one-parallax.webp";
 
 const ContactUsLanding = () => {
   return (
-    <section className="contact-us-landing flex-container flex-row txt-white" >
+    <section className="contact-us-landing flex-container flex-row txt-white">
       <motion.img
         initial={{ opacity: 0, translateX: 1000 }}
-        whileInView={{ opacity: 0.8, translateX: 400, }}
+        whileInView={{ opacity: 0.8, translateX: 400 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
-        src={PizzaOne} alt="" aria-hidden="true" className="parallax company-details-image"
+        src={PizzaOne}
+        alt=""
+        aria-hidden="true"
+        className="parallax company-details-image"
       />
       <motion.img
         initial={{ opacity: 0, translateX: 1000 }}
-        whileInView={{ opacity: 0.8, translateX: 600, }}
+        whileInView={{ opacity: 0.8, translateX: 600 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
-        src={PizzaOne} alt="" aria-hidden="true" className="parallax company-details-image-two"
+        src={PizzaOne}
+        alt=""
+        aria-hidden="true"
+        className="parallax company-details-image-two"
       />
       <motion.img
         initial={{ opacity: 0, translateX: 1000 }}
-        whileInView={{ opacity: 0.8, translateX: 800, }}
+        whileInView={{ opacity: 0.8, translateX: 800 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
-        src={PizzaOne} alt="" aria-hidden="true" className="parallax company-details-image-three"
+        src={PizzaOne}
+        alt=""
+        aria-hidden="true"
+        className="parallax company-details-image-three"
       />
-      <section className='company-details'>
+      <section className="company-details">
         <div>
           <h2>000 (000) 123 4567</h2>
           <p>Contact us if you have any questions</p>
         </div>
         <div>
-          <h2>506 Roy Alley 80202 </h2>
-          <p>Colorado, Denver</p>
+          <h2>674 Aspen Avenue, Unit 10, 20001</h2>
+          <p>Washington, DC</p>
         </div>
         <div>
           <h2>Open Monday-Friday</h2>
@@ -43,8 +51,6 @@ const ContactUsLanding = () => {
       </section>
     </section>
   );
-
-}
-
+};
 
 export default ContactUsLanding;
